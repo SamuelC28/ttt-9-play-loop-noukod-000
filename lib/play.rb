@@ -23,21 +23,13 @@ def valid_move?(board, index)
   index.between?(0,8) && !position_taken?(board, index)
 end
 
-
- def play(board)
-   while board < 9
-
-    turn(board)
-  end
- end
-
- # def play (board)
- #  s = 0
- #   while s < 9
- #     s += 1
- #     turn(board)
- #   end
- # end
+def play (board)
+   s = 0
+    while s < 9
+      s += 1
+      turn(board)
+    end
+end
 
 
 def turn(board)
