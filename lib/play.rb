@@ -22,42 +22,24 @@ end
 def valid_move?(board, index)
   index.between?(0,8) && !position_taken?(board, index)
 end
-def over?(board)
-  puts 'is it over?'
-  if won?(board) || draw?(board) || full?(board)
-    return true
-  else
-    puts 'no keep going'
-    return false
-  end
-end
-def won?(board)
-  WIN_COMBINATIONS.each do |win_combo|
-    #check for player 1 win
-    if check_win_combination?(board, 'X', win_combo)
-      return win_combo
-      #check for player 2 win
-    elsif check_win_combination?(board, 'O', win_combo)
-      return win_combo
-    else
-      return false
-    end
-  end
+
 end
 
-def play(board)
-  until over?(board) == true || won?(board) != false
-  puts 'turn'
+# def play(board)
+#   until over?(board) == true || won?(board) != false
+#   puts 'turn'
+#     turn(board)
+#   end
+# end
+
+def play (board)
+  s = 0
+  while s < 9
+    s += 1
     turn(board)
   end
-  if winner(board)
-    puts "Congratulations!"
-  elsif draw?(board)
-    puts "Draw!"
-  else
-    return nil
-  end
 end
+  
 
 def turn(board)
   puts "Please enter 1-9:"
