@@ -36,3 +36,13 @@ def turn(board)
 end
 
 # Define your play method below
+
+
+
+  # if winner(board)
+  #   puts "Congratulations!"
+  # elsif draw?(board)
+  #   puts "Draw!"
+  # else
+  #   return nil
+
