@@ -25,20 +25,20 @@ end
 
 end
 
-# def play(board)
-#   until over?(board) == true || won?(board) != false
-#   puts 'turn'
+ def play(board)
+   until over?(board) == true || won?(board) != false
+   puts 'turn'
+    turn(board)
+   end
+ end
+
+# def play (board)
+#   s = 0
+#   while s < 9
+#     s += 1
 #     turn(board)
 #   end
 # end
-
-def play (board)
-  s = 0
-  while s < 9
-    s += 1
-    turn(board)
-  end
-end
 
 
 def turn(board)
