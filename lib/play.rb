@@ -25,7 +25,7 @@ end
 
 
  def play(board)
-   while (board) < 9
+   while board < 9
 
     turn(board)
   end
