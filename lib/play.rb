@@ -24,7 +24,7 @@ def valid_move?(board, index)
 end
 def over?(board)
   puts 'is it over?'
-  #if won?(board) || draw?(board) || full?(board)
+  if won?(board) || draw?(board) || full?(board)
     return true
   else
     puts 'no keep going'
