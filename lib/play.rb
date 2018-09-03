@@ -24,20 +24,20 @@ def valid_move?(board, index)
 end
 
 
- # def play(board)
- #   until (board) == true || (board) != false
- #   puts 'turn'
- #    turn(board)
+ def play(board)
+   while (board) == true 
+ 
+    turn(board)
+  end
+ end
+
+ # def play (board)
+ #  s = 0
+ #   while s < 9
+ #     s += 1
+ #     turn(board)
  #   end
  # end
-
- def play (board)
-  s = 0
-   while s < 9
-     s += 1
-     turn(board)
-   end
- end
 
 
 def turn(board)
