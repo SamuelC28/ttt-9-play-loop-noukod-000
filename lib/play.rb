@@ -25,8 +25,8 @@ end
 
 
  def play(board)
-   while (board) == true 
- 
+   while (board) == true
+
     turn(board)
   end
  end
