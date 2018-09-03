@@ -26,7 +26,7 @@ end
 end
 
  def play(board)
-   until over?(board) == true || won?(board) != false
+   until (board) == true || won?(board) != false
    puts 'turn'
     turn(board)
    end
