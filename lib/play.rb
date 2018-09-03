@@ -39,7 +39,7 @@ def play (board)
     turn(board)
   end
 end
-  
+
 
 def turn(board)
   puts "Please enter 1-9:"
@@ -53,13 +53,4 @@ def turn(board)
   end
 end
 
-# Define your play method below
 
-
-
-  # if winner(board)
-  #   puts "Congratulations!"
-  # elsif draw?(board)
-  #   puts "Draw!"
-  # else
-  #   return nil
