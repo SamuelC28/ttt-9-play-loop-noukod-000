@@ -22,6 +22,15 @@ end
 def valid_move?(board, index)
   index.between?(0,8) && !position_taken?(board, index)
 end
+def over?(board)
+  puts 'is it over?'
+  if won?(board) || draw?(board) || full?(board)
+    return true
+  else
+    puts 'no keep going'
+    return false
+  end
+end
 
 def play(board)
   until over?(board) == true || won?(board) != false
